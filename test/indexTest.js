@@ -52,3 +52,11 @@ describe("css/style.css", () => {
     expect(rule.style["background"], hint).to.eq("#ccc");
   });
 });
+// select the element whose styles you want to log
+const element = document.querySelector('#tasks .completed');
+
+// get the computed styles of the element
+const styles = window.getComputedStyle(element);
+
+// log the styles to the console
+console.log(styles);
